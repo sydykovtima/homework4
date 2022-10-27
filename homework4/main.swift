@@ -24,21 +24,21 @@ var string3 = "кратные5:  "
 
 
 var string = "айфон,макбук,учиться,телефон,микрофон,камера,петь,танцевать,кола,нитро,магазин,дорога,машина,крышка,дом,дверь,зубачистка,руль,рука,нога,голова"
-var slovo = ""
-var slova = ""
-func wuy(){
+var word = ""
+var words = ""
+func dictionary(){
     for i in string {
         if i != "," && i != "."{
-            slovo += "\(i)"
+            word += "\(i)"
         }else{
-            slova += slovo
-            slova += (" \(slovo.count) Букв, ")
-            slovo = ""
+            words += word
+            words += (" \(word.count) Букв, ")
+            word = ""
         }
     }
 }
-wuy()
-print(slova)
+dictionary()
+print(words)
 
 //Калькуялтор
 
